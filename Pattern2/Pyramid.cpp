@@ -11,7 +11,20 @@ int main(){
             cout<<" ";
         }
 
-        for(int j =1;j<=i;j++){
+        for(int j =1;j<=2*i-1;j++){
+            cout<<"*";
+        }
+         
+
+        cout<<endl;
+    }
+
+    for(int k = row-1;k>=1;k--){
+        for(int space = 1;space<=row-k;space++){
+            cout<<" ";
+        }
+
+        for(int j =1;j<=2*k-1;j++){
             cout<<"*";
         }
          
