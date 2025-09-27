@@ -2,9 +2,7 @@
 
 #include <iostream>
 using namespace std;
-int  resized(int &len1,int &len2){
-        return len1+len2;
-}
+ 
 
 int len(string str)
 {
@@ -25,8 +23,8 @@ string insertSubString(string main, string sub, int pos)
     int mainLen = len(main);
     int subLen = len(sub);
 
-    // main.resize(mainLen + subLen);
-    resized(mainLen,subLen);
+    main.resize(mainLen + subLen);
+     
 
     for (int i = mainLen - 1; i >= pos; i--)
     {
